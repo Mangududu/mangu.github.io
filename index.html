@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halden kommune</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #89D4C6;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.grid-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    overflow: hidden; /* Ensure images don't overflow their container */
+}
+
+.grid-item img {
+    max-width: 100%; /* Make images scale within their container */
+    height: auto; /* Ensure images maintain their aspect ratio */
+    display: block; /* Remove default image spacing */
+    margin: 0 auto; /* Center the images within their container */
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #6ACABB;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Halden kommune</h1>
+    </header>
+
+    <div class="grid-container">
+        <!-- Replace the URLs with the URLs of your images -->
+        <div class="grid-item"><a href="https://www.halden.kommune.no/"><img src="/Img/Halden kom (logo).png" alt="Image 1"></a><p>Halden Kommune</p></div>
+        <div class="grid-item"><a href="https://viken.no/halden-vgs/"><img src="/Img/Peter Stock bildet 4.jpg" alt="Image 2"></a><p>Halden videregående skole</p></div>
+        <div class="grid-item"><a href="https://no.wikipedia.org/wiki/Halden"><img src="/Img/Peter - Stock bildet 1.jpg" alt="Image 3"></a><p>Halden By</p></div>
+        <div class="grid-item"><a href="https://www.tiendeo.no/butikker/halden/coop-extra-gr%C3%B8nland/6857"><img src="/Img/Peter - Stock bildet 8.jpg" alt="Image 4"></a><p>Grønnland</p></div>
+        <div class="grid-item"><a href="https://kandusi.no/en-vandring-gjennom-gagata/"><img src="/Img/Peter - Stock bildet 7.jpg" alt="Image 5"></a><p>Gå gata</p></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Halden</p>
+    </footer>
+
+</body>
+</html>
